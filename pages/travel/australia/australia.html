@@ -3,12 +3,12 @@
 div#gallery
   - for(var n=1; n<=max; n++)
     div
-      img(src= '/images/photos/australia(imgstr + n)+'.jpg')
+      img(src='/images/photos/australia/' +(imgstr + n)+'.jpg')
       a(href='#lightbox-'+n)
 
 - for(var n=1; n<=max;n++)
   div.lightbox(id="lightbox-"+n)
     div.content
-      img(src='https://picsum.photos/1920/1080/?image='+(imgstr+n))
+      img(src='/images/photos/australia/' +(imgstr + n)+'.jpg')
       .title No. <b>#{imgstr+n}</b> from photos
       a.close(href='#gallery')
