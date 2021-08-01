@@ -1,9 +1,9 @@
 - var max = 18
-- var imgstr = 511
+- var imgstr = 0
 div#gallery
   - for(var n=1; n<=max; n++)
     div
-      img(src= 'https://picsum.photos/600/600/?image='+(imgstr + n))
+      img(src= '/images/photos/australia(imgstr + n)+'.jpg')
       a(href='#lightbox-'+n)
 
 - for(var n=1; n<=max;n++)
